@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Exemplar</title>
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="alterarStyle.css">
+</head>
+<body>
+    <h1>Insira os novos dados do exemplar</h1>
+    <div>
+        <form action="../AtlExemplar" method="post">
+            <p>
+                <label for="exemplarId">Identificador:</label>
+                <input type="number" id="exemplarId" name="exemplarId">
+            </p>
+            <p>
+                <label for="exemplarIdLivro">Identificador do livro:</label>
+                <input type="text" id="exemplarIdLivro" name="exemplarIdLivro">
+            </p>
+            <p>
+                <label for="exemplarIdEstante">Identificador da estante:</label>
+                <input type="text" id="exemplarIdEstante" name="exemplarIdEstante">
+            </p>
+        <p class="botoes">
+            <input type="submit" value="Alterar">
+            <a class="botaoVoltar" href="../alterar.html"><span>Voltar</span></a>
+        </p>
+        </form>
+        
+    </div>
+</body>
+</html>

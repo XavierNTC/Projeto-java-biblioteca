@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Livro</title>
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="alterarStyle.css">
+</head>
+<body>
+    <h1>Insira os novos dados do livro</h1>
+    <div>
+        <form action="../AtlLivro" method="post">
+            <p>
+                <label for="livroId">Identificador:</label>
+                <input type="number" id="livroId" name="livroId">
+            </p>
+            <p>
+                <label for="livroTitulo">Título:</label>
+                <input type="text" id="livroTitulo" name="livroTitulo">
+            </p>
+            <p>
+                <label for="livroIdCategoria">Identificador da categoria:</label>
+                <input type="text" id="livroIdCategoria" name="livroIdCategoria">
+            </p>
+            <p>
+                <label for="livroIdEditora">Identificador da editora:</label>
+                <input type="text" id="livroIdEditora" name="livroIdEditora">
+            </p>
+            <p>
+                <label for="livroNumExemplares">Número de exemplares:</label>
+                <input type="text" id="livroNumExemplares" name="livroNumExemplares">
+            </p>
+            <p>
+                <label for="livroNumExemplaresDisponiveis">Número de exemplares disponíveis:</label>
+                <input type="text" id="livroNumExemplaresDisponiveis" name="livroNumExemplaresDisponiveis">
+            </p>
+        <p class="botoes">
+            <input type="submit" value="Alterar">
+            <a class="botaoVoltar" href="../alterar.html"><span>Voltar</span></a>
+        </p>
+        </form>
+        
+    </div>
+</body>
+</html>

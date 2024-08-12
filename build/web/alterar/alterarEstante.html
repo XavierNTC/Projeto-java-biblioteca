@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Estante</title>
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="alterarStyle.css">
+</head>
+<body>
+    <h1>Insira os novos dados da estante</h1>
+    <div>
+        <form action="../AtlEstante" method="post">
+            <p>
+                <label for="estanteId">Identificador:</label>
+                <input type="number" id="estanteId" name="estanteId">
+            </p>
+            <p>
+                <label for="estanteSetor">Setor:</label>
+                <input type="text" id="estanteSetor" name="estanteSetor">
+            </p>
+            <p>
+                <label for="estanteCorredor">Corredor:</label>
+                <input type="text" id="estanteCorredor" name="estanteCorredor">
+            </p>
+            <p>
+                <label for="estanteTema">Tema:</label>
+                <input type="text" id="estanteTema" name="estanteTema">
+            </p>
+        <p class="botoes">
+            <input type="submit" value="Alterar">
+            <a class="botaoVoltar" href="../alterar.html"><span>Voltar</span></a>
+        </p>
+        </form>
+        
+    </div>
+</body>
+</html>

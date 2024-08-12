@@ -1,0 +1,113 @@
+/* Reset básico para manter a consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF3E0; /* Fundo bege claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #FFA726; /* Laranja */
+    text-align: center;
+    margin-top: 20px;
+}
+
+div {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form p {
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p.botoes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: #FFA726; /* Laranja */
+    color: #fff;
+    padding: 10px 20px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #FB8C00; /* Laranja mais escuro */
+}
+
+/* Configurações específicas para o botão "Voltar" */
+a.botaoVoltar {
+    background-color: #2196F3; /* Azul suave */
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a.botaoVoltar:hover {
+    background-color: #1976D2; /* Azul mais escuro para o efeito hover */
+}
+
+/* Para tornar a página responsiva */
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input[type="submit"],
+    a.botaoVoltar {
+        padding: 8px 15px;
+    }
+
+    p.botoes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="submit"] {
+        margin-bottom: 10px;
+    }
+}

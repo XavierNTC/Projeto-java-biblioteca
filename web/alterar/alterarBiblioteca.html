@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Bibliotecaria</title>
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="alterarStyle.css">
+</head>
+<body>
+    <h1>Insira os novos dados da bibliotecaria</h1>
+    <div>
+        <form action="../AtlBibliotecaria" method="post">
+            <p>
+                <label for="bliotecariaId">Identificador:</label>
+                <input type="number" id="bliotecariaId" name="bliotecariaId">
+            </p>
+            <p>
+                <label for="bibliotecariaNome">Nome:</label>
+                <input type="text" id="bibliotecariaNome" name="bibliotecariaNome">
+            </p>
+            <p>
+                <label for="bibliotecariaTipo">Tipo:</label>
+                <input type="text" id="bibliotecariaTipo" name="bibliotecariaTipo">
+            </p>
+            <p>
+                <label for="bibliotecariaInstituicaEnsino">Instituição de ensino:</label>
+                <input type="text" id="bibliotecariaInstituicaEnsino" name="bibliotecariaInstituicaEnsino">
+            </p>
+            <p class="botoes">
+            <input type="submit" value="Alterar">
+            <a class="botaoVoltar" href="../alterar.html"><span>Voltar</span></a>
+        </p>
+        </form>
+        
+    </div>
+</body>
+</html>

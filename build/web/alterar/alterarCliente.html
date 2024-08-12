@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cliente</title>
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="AlterarStyle.css">
+</head>
+<body>
+    <h1>Insira os novos dados do cliente</h1>
+    <div>
+        <form action="../AtlCliente" method="post">
+            <p>
+                <label for="clienteId">Identificador:</label>
+                <input type="number" id="clienteId" name="clienteId">
+            </p>
+            <p>
+                <label for="clienteNome">Nome:</label>
+                <input type="text" id="clienteNome" name="clienteNome">
+            </p>
+            <p>
+                <label for="clienteSobrenome">Sobrenome:</label>
+                <input type="text" id="clienteSobrenome" name="clienteSobrenome">
+            </p>
+            <p>
+                <label for="clienteIdade">Idade</label>
+                <input type="number" id="clienteIdade" name="clienteIdade">
+            </p>
+            <p>
+                <label for="clienteCep">CEP:</label>
+                <input type="text" id="clienteCep" name="clienteCep">
+            </p>
+        <p class="botoes">
+            <input type="submit" value="Alterar">
+            <a class="botaoVoltar" href="../alterar.html"><span>Voltar</span></a>
+        </p>
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Empréstimo</title>
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="alterarStyle.css">
+</head>
+<body>
+    <h1>Insira os novos dados do empréstimo</h1>
+    <div>
+        <form action="../AtlEmprestimo" method="post">
+            <p>
+                <label for="emprestimoId">Identificador:</label>
+                <input type="number" id="emprestimoId" name="emprestimoId">
+            </p>
+            <p>
+                <label for="emprestimoExemplarId">Identificador do exemplar:</label>
+                <input type="number" id="emprestimoExemplarId" name="emprestimoExemplarId">
+            </p>
+            <p>
+                <label for="emprestimoBibliotecariaId">Identificador da bibliotecaria:</label>
+                <input type="text" id="emprestimoBibliotecariaId" name="emprestimoBibliotecariaId">
+            </p>
+            <p>
+                <label for="emprestimoIdentificadorCliente">Identificador do cliente:</label>
+                <input type="number" id="emprestimoIdentificadorCliente" name="emprestimoIdentificadorCliente">
+            </p>
+            <p>
+                <label for="emprestimoDataEmprestimo">Data do empréstimo:</label>
+                <input type="date" id="emprestimoDataEmprestimo" name="emprestimoDataEmprestimo">
+            </p>
+            <p>
+                <label for="emprestimoDataDevolucao">Data de devolução</label>
+                <input type="date" id="emprestimoDataDevolucao" name="emprestimoDataDevolucao">
+            </p>
+            <p>
+                <label for="emprestimoValorMulta">Valor da multa diária:</label>
+                <input type="number" step="0.01" id="emprestimoValorMulta" name="emprestimoValorMulta">
+            </p>
+        <p class="botoes">
+            <input type="submit" value="Alterar">
+            <a class="botaoVoltar" href="../alterar.html"><span>Voltar</span></a>
+        </p>
+        </form>
+        
+    </div>
+</body>
+</html>
